@@ -1,0 +1,11 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"qqfRbkF42v"},
+{"type":"table","name":"Items","database":"qqfRbkF42v","data":
+[
+{"PaymentDetailId":"4","CardOwnerName":"Dicky Sastro","CardNumber":"22234","ExpirationDate":"2021\/10\/12","SecurityCode":"Dicky123"},
+{"PaymentDetailId":"6","CardOwnerName":"Mega Utami","CardNumber":"22353","ExpirationDate":"2022\/10\/10","SecurityCode":"Mega123"},
+{"PaymentDetailId":"7","CardOwnerName":"Kenzie Alvaro","CardNumber":"23433","ExpirationDate":"2022\/03\/21","SecurityCode":"Kenzie123"}
+]
+}
+]

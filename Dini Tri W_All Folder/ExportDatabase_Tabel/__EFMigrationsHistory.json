@@ -1,0 +1,9 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"qqfRbkF42v"},
+{"type":"table","name":"__EFMigrationsHistory","database":"qqfRbkF42v","data":
+[
+{"MigrationId":"20220330101201_Initial Migration","ProductVersion":"5.0.12"}
+]
+}
+]

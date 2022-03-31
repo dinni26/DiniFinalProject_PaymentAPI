@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "c04307d9-290e-492b-b9af-29d866bb62c4",
+		"name": "Final Project Lokal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"dini3\",\r\n  \"email\": \"dini3@gmail.com\",\r\n  \"password\": \"Dini3!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/AuthManagement/Register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"AuthManagement",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"dini3@gmail.com\",\r\n  \"password\": \"Dini3!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/AuthManagement/Login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"AuthManagement",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImIzZjI4Yzk5LTliNDQtNDM3MC1hNTE3LWU3MTdjMTVjMDU3NSIsImVtYWlsIjoiZGluaTNAZ21haWwuY29tIiwic3ViIjoiZGluaTNAZ21haWwuY29tIiwianRpIjoiMDdhM2E5NjAtODQ2NS00ZmJhLThkOWQtNmY5MzI2Mzc5MzM1IiwibmJmIjoxNjQ4NzA1NTAyLCJleHAiOjE2NDg3MDczMDIsImlhdCI6MTY0ODcwNTUwMn0.jN6OQoGQj6NpY9JhNeBXW53rxQNmVLu_4QYiayGdfP8\",\r\n        \"refreshToken\": \"7AX979CIDYH7JDE5AV903FM5VR93HXB3IKR031f777e-cd89-4bf2-bdc5-4ce5f5599339\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/AuthManagement/RefreshToken",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"AuthManagement",
+						"RefreshToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Payment",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImIzZjI4Yzk5LTliNDQtNDM3MC1hNTE3LWU3MTdjMTVjMDU3NSIsImVtYWlsIjoiZGluaTNAZ21haWwuY29tIiwic3ViIjoiZGluaTNAZ21haWwuY29tIiwianRpIjoiMDdhM2E5NjAtODQ2NS00ZmJhLThkOWQtNmY5MzI2Mzc5MzM1IiwibmJmIjoxNjQ4NzA1NTAyLCJleHAiOjE2NDg3MDczMDIsImlhdCI6MTY0ODcwNTUwMn0.jN6OQoGQj6NpY9JhNeBXW53rxQNmVLu_4QYiayGdfP8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:5001/api/Payment",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Payment Where ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Post Payment Details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImIzZjI4Yzk5LTliNDQtNDM3MC1hNTE3LWU3MTdjMTVjMDU3NSIsImVtYWlsIjoiZGluaTNAZ21haWwuY29tIiwic3ViIjoiZGluaTNAZ21haWwuY29tIiwianRpIjoiMDdhM2E5NjAtODQ2NS00ZmJhLThkOWQtNmY5MzI2Mzc5MzM1IiwibmJmIjoxNjQ4NzA1NTAyLCJleHAiOjE2NDg3MDczMDIsImlhdCI6MTY0ODcwNTUwMn0.jN6OQoGQj6NpY9JhNeBXW53rxQNmVLu_4QYiayGdfP8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cardOwnerName\": \"Kenzie Alvaro\",\r\n  \"cardNumber\": \"23433\",\r\n  \"expirationDate\": \"2022/03/21\",\r\n  \"securityCode\": \"Kenzie123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Payment",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Payment Where ID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImIzZjI4Yzk5LTliNDQtNDM3MC1hNTE3LWU3MTdjMTVjMDU3NSIsImVtYWlsIjoiZGluaTNAZ21haWwuY29tIiwic3ViIjoiZGluaTNAZ21haWwuY29tIiwianRpIjoiMDdhM2E5NjAtODQ2NS00ZmJhLThkOWQtNmY5MzI2Mzc5MzM1IiwibmJmIjoxNjQ4NzA1NTAyLCJleHAiOjE2NDg3MDczMDIsImlhdCI6MTY0ODcwNTUwMn0.jN6OQoGQj6NpY9JhNeBXW53rxQNmVLu_4QYiayGdfP8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"paymentDetailId\": 3,\r\n  \"cardOwnerName\": \"Wiwik Supiyati Handono\",\r\n  \"cardNumber\": \"13345\",\r\n  \"expirationDate\": \"2022/11/21\",\r\n  \"securityCode\": \"Wiwik123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Payment/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Payment",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Payment Where ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImIzZjI4Yzk5LTliNDQtNDM3MC1hNTE3LWU3MTdjMTVjMDU3NSIsImVtYWlsIjoiZGluaTNAZ21haWwuY29tIiwic3ViIjoiZGluaTNAZ21haWwuY29tIiwianRpIjoiMDdhM2E5NjAtODQ2NS00ZmJhLThkOWQtNmY5MzI2Mzc5MzM1IiwibmJmIjoxNjQ4NzA1NTAyLCJleHAiOjE2NDg3MDczMDIsImlhdCI6MTY0ODcwNTUwMn0.jN6OQoGQj6NpY9JhNeBXW53rxQNmVLu_4QYiayGdfP8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"paymentDetailId\": 3,\r\n  \"cardOwnerName\": \"Wiwik Supiyati Handono\",\r\n  \"cardNumber\": \"13345\",\r\n  \"expirationDate\": \"2022/11/21\",\r\n  \"securityCode\": \"Wiwik123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Payment/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Payment",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
